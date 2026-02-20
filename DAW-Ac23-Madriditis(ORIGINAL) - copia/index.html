@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejor CONOcido que gente por conocer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            background-image: url('cono.webp');
+            background-size: 80px 80px;
+            background-repeat: repeat;
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #e63946, #f4a261);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .video-section {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 2px solid #333;
+        }
+
+        .video-section h2 {
+            color: #f4a261;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e63946;
+            padding-bottom: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .video-container video {
+            width: 100%;
+            display: block;
+        }
+
+        .description-section {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 2px solid #333;
+        }
+
+        .description-section h2 {
+            color: #f4a261;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e63946;
+            padding-bottom: 10px;
+        }
+
+        .description-section p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        .technical-section {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 2px solid #333;
+        }
+
+        .technical-section h2 {
+            color: #f4a261;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e63946;
+            padding-bottom: 10px;
+        }
+
+        .technical-section h3 {
+            color: #e63946;
+            margin: 25px 0 15px 0;
+            font-size: 1.3rem;
+        }
+
+        .technical-section p {
+            font-size: 1rem;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        .technical-section ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .technical-section ul li {
+            padding: 8px 0;
+            color: #e0e0e0;
+            position: relative;
+        }
+
+        .technical-section ul li::before {
+            content: "▸";
+            color: #f4a261;
+            position: absolute;
+            left: -20px;
+        }
+
+         footer {
+            background: linear-gradient(90deg, #e63946, #f4a261);
+            padding: 25px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer .team {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        footer .module {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .video-section,
+            .description-section,
+            .technical-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mejor CONOcido que gente por conocer</h1>
+        <p>Ficticius Junior y Kylian Penalppé - Un homenaje satírico al fútbol</p>
+    </header>
+
+    <div class="container">
+        <section class="video-section">
+            <h2>El Video</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="504.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </section>
+
+        <section class="description-section">
+            <h2>Descripción del Proyecto</h2>
+            <p>
+                Este proyecto es un cortometraje satírico inspirado en el programa de televisión APM (Bàsics del 3Cat). 
+                El video recopila y edita diversos momentos humorísticos del programa donde se hace una crítica 
+                cómica a las simulaciones de faltas en el fútbol, centrándose especialmente en jugadores del Real Madrid.
+            </p>
+            <p>
+                El título "Ficticius Junior y Kylian Penalppé" hace referencia de forma humorística a conocidos 
+                jugadores, jugando con la idea de las simulaciones y caídas exageradas a pesar de ser atletas de elite con puro musculo
+            </p>
+            <p>
+                El propósito del video es puramente humorístico y educativo, como parte de una práctica 
+                académica de edición de video con Kdenlive.
+            </p>
+        </section>
+
+        <section class="technical-section">
+            <h2>Aspectos Técnicos</h2>
+
+            <h3>Software Utilizado</h3>
+            <p>
+                El video ha sido editado con <strong>Kdenlive</strong>, un software de edición de video 
+                no lineal de código abierto. Kdenlive ofrece herramientas profesionales para la edición 
+                de video, incluyendo soporte para múltiples pistas de audio y video, efectos, transiciones 
+                y exportación en diversos formatos.
+            </p>
+
+            <h3>Transiciones Aplicadas</h3>
+            <p>Se han utilizado las siguientes transiciones entre las diferentes escenas del video:</p>
+            <ul>
+                <li><strong>Barrido circular:</strong> Transición que revela la siguiente escena mediante un barrido en forma circular, creando un efecto dinámico y llamativo.</li>
+                <li><strong>Disolver:</strong> Transición suave que funde una escena con la siguiente, utilizada para crear continuidad entre clips.</li>
+                <li><strong>Barrido abajo:</strong> Efecto de cortinilla vertical donde la nueva escena aparece desde arriba hacia abajo, aportando fluidez al montaje.</li>
+            </ul>
+
+            <h3>Efectos Visuales</h3>
+            <p>Se han aplicado los siguientes efectos para mejorar la estética del video:</p>
+            <ul>
+                <li><strong>Pixelizar:</strong> Efecto aplicado en ciertos momentos para crear un estilo visual distintivo o censurar elementos.</li>
+                <li><strong>Película antigua:</strong> Efecto que simula el aspecto de películas antiguas con grano y tonalidades vintage, añadiendo un toque nostálgico a algunas escenas.</li>
+            </ul>
+
+            <h3>Banda Sonora</h3>
+            <p>
+                Como banda sonora se ha utilizado el tema principal de <strong>Interstellar</strong> (composición de Hans Zimmer). 
+                Esta música aporta una atmósfera épica y emocional al montaje. El volumen se ha ajustado
+                para que no interfiera con el audio original de los clips de APM.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p class="team">Saeed Muhammad & Tahir Muhammad</p>
+        <p class="Workplace">ETP Xavier - 2026</p>
+        <p class="Nota">"Nota Importante: el video que subimos a GitHubPages es un video corto para que no haya problemas al subir el proyecto</p>
+        
+    </footer>
+</body>
+</html>
